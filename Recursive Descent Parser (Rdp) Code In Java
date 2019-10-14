@@ -11,6 +11,9 @@ System.out.println("Enter the input string");
 String s=sc.nextLine();
 s=s+"$";
 
+
+
+
 /* grammer used
 E->TA
 A->+TA
@@ -28,8 +31,11 @@ System.exit(0);
 ptr=0;
 if(E() && (ptr+1 == str.length))
 System.out.println("The input string is valid.");
+
 else
 System.out.println("The input string is invalid.");
+System.out.println("Kindly change accordingly");
+
 }
 
 static boolean E()
@@ -63,6 +69,7 @@ return true;
 }
 ptr=temp;
 System.out.println(ptr);
+System.out.println("End of function");
 return true;
 }
 
@@ -72,6 +79,8 @@ if(F())
 {
 if(B())
 {
+
+
 return true;
 }
 }
@@ -117,6 +126,7 @@ if(E())
 if(str[ptr]==')')
 {
 ptr++;
+System.out.println("Encountered closed parantheses");
 return true;
 }
 }
